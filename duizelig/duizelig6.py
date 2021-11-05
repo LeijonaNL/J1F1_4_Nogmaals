@@ -7,7 +7,7 @@ o = 1
 o2 = 1
 repeat = True
 while repeat:
-    print(str(o) + ' + ' + str(i) + ' + 1 = ' + str(o2))
+    print(str(o) + ' + ' + str(i + 1) + ' = ' + str(o2))
     if o2 < 1000:
         o = o + i + 1
         o2 = o + i + 2

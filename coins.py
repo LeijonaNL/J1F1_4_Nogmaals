@@ -9,7 +9,7 @@ paid = int(float(input('Paid amount: ')) * 100) # Een input voor hoeveel er is b
 change = paid - toPay # Betaald - betalen = wisselbedrag.
 
 if change > 0: # Herkent of al het wisselgeld is gegeven en of er nog wisselgeld gegeven moet worden.
-  coinValue = 50 # De waarde van een munt.
+  coinValue = 1000 # De waarde van een munt.
   
   while change > 0 and coinValue > 0: # Een while die blijft werken tot er geen change of value meer over is.
     nrCoins = change // coinValue # Dit weet ik niet te beschrijven.
@@ -20,6 +20,14 @@ if change > 0: # Herkent of al het wisselgeld is gegeven en of er nog wisselgeld
       change -= nrCoinsReturned * coinValue # Een formule voor hoeveel wisselgeld je hebt gegeven bij de bovenstaande vraag.
 
 # comment on code below: Door deze code zul de vraag voor meerdere muntsoorten de vragen stellen.
+    if coinValue == 1000:
+      coinValue = 500
+    if coinValue == 500:
+      coinValue = 200
+    if coinValue == 200:
+      coinValue = 100
+    if coinValue == 100:
+      coinValue = 50
     if coinValue == 50:
       coinValue = 20
     elif coinValue == 20:
